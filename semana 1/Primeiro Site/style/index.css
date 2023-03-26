@@ -1,0 +1,26 @@
+main {
+  padding: 50px 0px 50px 50px;
+}
+
+main h1,
+main h2 {
+  padding: 20px 0px 20px 20px;
+}
+
+main p {
+  padding: 5px 0px 5px 5px;
+}
+
+ul {
+  margin-left: 30px;
+}
+
+table {
+  width: 700px;
+  height: 200px;
+}
+
+table>thead>tr td {
+  font-size: 1.6em;
+  font-weight: bold;
+}

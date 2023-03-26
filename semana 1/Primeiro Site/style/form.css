@@ -1,0 +1,25 @@
+main h1 {
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+main p {
+  padding: 10px;
+}
+
+form {
+  padding: 20px;
+}
+
+form div {
+  padding: 10px;
+}
+
+#sub {
+  width: 100px;
+  height: 30px;
+  margin: 20px;
+  background-color: blue;
+  color: white;
+}

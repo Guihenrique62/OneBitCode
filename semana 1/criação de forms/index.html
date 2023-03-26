@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <h1>Cadastro da liga dos astronautas</h1>
+  <form>
+    <label for="name">Nome:</label>
+    <input type="text" name="name" id="name">
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+
+    <label for="pass">Password</label>
+    <input type="password" name="pass" id="pass">
+    <br><br>
+
+    <label for="date">Data de Nascimento:</label>
+    <input type="date">
+
+    <label for="ar">Escolher Arquivo:</label>
+    <input type="file">
+    <br><br>
+
+    <label for="naci">Nacionalidade</label>
+    <input list="naci">
+
+    <datalist id="naci">
+      <option value="Russo">
+      <option value="Brasileiro">
+      <option value="Americano">
+      <option value="Espanhol">
+      <option value="Portugues">
+    </datalist>
+
+    <label for="gen">Genero:</label>
+    <input type="radio" name="gen" id="gen">F
+    <input type="radio" name="gen" id="gen">M
+    <br><br>
+
+    <p>Suas Principais Habilidades:</p>
+    <label for="inteligencia">Inteligencia</label>
+    <input type="checkbox" name="inteligencia" id="inteligencia">|
+
+    <label for="resiliencia">resiliencia</label>
+    <input type="checkbox" name="resiliencia" id="resiliencia">|
+
+    <label for="Preparo">Preparo Fisico</label>
+    <input type="checkbox" name="Preparo" id="Preparo">|
+
+    <label for="Educação">Educação</label>
+    <input type="checkbox" name="Educação" id="Educação">
+    <br><br>
+
+    <div><textarea name="description" id="description" cols="30" rows="10"
+        placeholder="Fale mais Sobre voce:"></textarea></div>
+
+    <input type="submit" value="Enviar">
+
+  </form>
+
+
+
+</body>
+
+</html>

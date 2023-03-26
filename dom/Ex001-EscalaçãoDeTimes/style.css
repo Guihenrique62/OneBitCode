@@ -1,0 +1,80 @@
+*{
+  padding: 0px;
+  margin: 0px;
+
+}
+
+body{
+  background-image: linear-gradient(-45deg,rgb(167, 167, 241),white);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section{
+  width: 80%;
+  height: 70%;
+  border: 1px solid rgba(0, 0, 0, 0.473);
+  border-radius: 10px;
+  background-color: white;
+}
+
+h1{
+  width: 100%;
+  height: 28px;
+  border-radius: 0px 0px 10px 5px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(189, 189, 189);
+}
+
+.creating{
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+.creating > input{
+  width: 25%;
+}
+
+.creating > button{
+  width: 120px;
+  height: 40px;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: rgb(120, 245, 89);
+}
+
+.creating > button:hover{
+  background-color: rgb(99, 199, 74);
+  cursor: pointer;
+}
+
+
+.deleting{
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
+.deleting > button{
+  width: 120px;
+  height: 40px;
+  border: 1px solid rgb(206, 9, 9);
+  border-radius: 5px;
+  background-color: rgb(252, 70, 46);
+}
+
+.deleting > button:hover{
+  background-color: rgb(173, 45, 36);
+  cursor: pointer;
+}
+
+.list-of-players{
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
