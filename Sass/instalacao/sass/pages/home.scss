@@ -1,0 +1,39 @@
+@mixin quadrado-style($color-quadrados, $width, $height, $display, $flex-direction, $align-items){
+  background-color: $color-quadrados;
+  width: $width;
+  height: $height;
+  display: $display;
+  flex-direction: $flex-direction;
+  gap: 2px;
+  align-items: $align-items;
+}
+
+body{
+  display: flex;
+  background-color: antiquewhite;
+  align-items: center;
+  gap: 20px;
+}
+.quadrado{
+  @include quadrado-style($color-quadrado,200px ,200px ,flex , column, center);
+  input{
+    margin-top: 10px;
+    width: 80%;
+    height: 20px;
+  }
+  button{
+    width: 50%;
+    height: 30px;
+    border-style: none;
+    background-color: $color-btn;
+    border-radius: 10px;
+    &:hover{
+      background-color: #1f054f;
+    }
+  }
+
+}
+
+.quadrado2{
+  @include quadrado-style($color-quadrado,200px ,200px ,flex , column, center);
+}
