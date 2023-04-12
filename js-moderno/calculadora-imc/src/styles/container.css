@@ -2,7 +2,7 @@
 .container{
   display: flex;
   flex-direction: column;
-  height: 80%;
+  height: 100vh;
   width: 90%;
   background-color: rgb(235,235,235);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.300);
@@ -82,17 +82,12 @@
   transition: none;
 }
 
-.img-container{
-  width: 100%;
-  min-width: 100px;
-  max-width: 200px;
-  display: flex;
-  align-self: center;
-  margin-top: 40px;
+.table-container{
+  display: none;
 }
 
-.img-container > img{
-  width: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.195);
+table{
+  border: 1px solid rgb(36, 36, 36);
+  border-collapse: collapse;
 
 }
