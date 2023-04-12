@@ -1,5 +1,6 @@
 import './styles/index.css';
 import './styles/container.css';
+import './styles/media.css'
 import manipulateBtn from './scripts/handlerSexBtn';
 import calculateBtn from './scripts/calculateBtn';
 

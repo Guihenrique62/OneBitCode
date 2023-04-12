@@ -1,0 +1,44 @@
+@media screen and ( min-width: 395px) {
+  .img-container {
+    min-width: 150px;
+  }
+}
+
+@media screen and ( min-width: 560px) {
+  .img-container {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 30px;
+    align-self: normal;
+    min-width: 58%;
+  }
+  .sex > div > input{
+    height: 60px;
+    width: 120px;
+    font-size: 0.8em;
+  }
+
+  .sex > div{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+  }
+  
+  .inputs-div{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .button{
+    display: flex;
+    margin-top: 15px;
+    justify-content: right;
+  }
+  
+  #calculateBtn{
+    width: 20%;
+    margin-right: 6.5%;
+  }
+}
