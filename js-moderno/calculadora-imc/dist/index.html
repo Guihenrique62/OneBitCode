@@ -4,34 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="index.min.js"></script>
+  <script src="index.min.js" defer></script>
   <title>Calculadora de IMC</title>
 </head>
 <body>
   <h1 class="title">Calculadora de IMC</h1>
-  <section class="container">
+  <form class="container">
     <div class="sex inputs-div">
       <h3>Sexo:</h3>
       <div>
-        <input type="button" value="Homem" class="active">
-        <input type="button" value="Mulher">
+        <input type="button" value="Homem" class="active" id="menBtn">
+        <input type="button" value="Mulher" id="womenBtn">
       </div>
     </div>
     <div class="year inputs-div">
       <h3>Idade:</h3>
-      <input type="text"> Anos
+      <input type="number" placeholder="25" id="year" required> 
     </div>
     <div class="height inputs-div">
       <h3>Altura:</h3>
-      <input type="text" placeholder="1.85cm">cm
+      <input type="number" placeholder="1.85cm" id="height" required>
     </div>
     <div class="weight inputs-div">
       <h3>Peso:</h3>
-      <input type="text" placeholder="75kg">kg
+      <input type="number" placeholder="75kg" id="weight" required>
     </div>
     <div class="button">
-      <button class="calculateBtn">Calcular</button>
+      <button id="calculateBtn">Calcular</button>
     </div>
-  </section>
+
+
+    <div class="img-container">
+      <img src="images/image.png" alt="emagrecimento">
+    </div>
+  </form>
 </body>
 </html>
