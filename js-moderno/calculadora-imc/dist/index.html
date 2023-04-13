@@ -29,14 +29,45 @@
       <h3>Peso:</h3>
       <input type="number" placeholder="75kg" id="weight" required>
     </div>
-    <div class="button">
-      <button id="calculateBtn">Calcular</button>
+    <div class="btnTable">
+      <div class="button">
+        <button id="calculateBtn" type="submit">Calcular</button>
+      </div>
+  
+      <div class="table-container">
+        <table>
+          <tr>
+            <th>IMC</th>
+            <th>Classificação</th>
+          </tr>
+          <tr>
+            <td class="tdtext">Menor que 18,5</td>
+            <td>Magreza</td>
+          </tr>
+          <tr>
+            <td class="tdtext">18,5 a 24,9</td>
+            <td>Normal</td>
+          </tr>
+          <tr>
+            <td class="tdtext">25 a 29,9</td>
+            <td>Sobrepeso</td>
+          </tr>
+          <tr>
+            <td class="tdtext" >30 a 34,9</td>
+            <td>Obesidade grau 1</td>
+          </tr>
+          <tr>
+            <td class="tdtext">35 a 39,9</td>
+            <td>Obesidade grau 2</td>
+          </tr>
+          <tr>
+            <td class="tdtext">Maior que 40</td>
+            <td>Obesidade grau 3</td>
+          </tr>
+        </table>
+      </div>
     </div>
-
-    <div class="img-container">
-      
-      <img src="images/image2.png" alt="table" id="table">
-    </div>
+    
   </form>
 </body>
 </html>
