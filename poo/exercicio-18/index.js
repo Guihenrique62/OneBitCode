@@ -5,8 +5,8 @@ class User{
         this.password = password
     }
 
-    login(email,password){
-        if(email == this.email && password == this.password){
+    login(inputemail,inputpassword){
+        if(inputemail == this.email && inputpassword == this.password){
             alert("Logado com Sucesso")
         }else{
             alert("Usuário ou senha Incorreto")
@@ -25,5 +25,5 @@ alert('Usuário Cadastrado')
 const inputLoginEmail = prompt('Para realizar o login Digite seu e-mail:')
 const inputLoginPassword = prompt('Agora a senha:')
 
-User.login(inputLoginEmail,inputLoginPassword)
+user.login(inputLoginEmail,inputLoginPassword)
 
