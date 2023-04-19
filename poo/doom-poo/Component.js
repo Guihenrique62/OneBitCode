@@ -1,0 +1,27 @@
+export class Component{
+    #element = null
+    constructor(tag, parent, options){
+        this.tag = tag
+        this.parent = parent
+        this.options = options
+        this.buildComponent()
+    }
+
+    getElement(){
+        return this.#element
+    }
+
+    buildComponent(){
+        this.#element = document.createElement(this.tag)
+        Object.assign(this.#element, this.options)
+        return this
+    }
+
+    render(){
+        if(this.parent instanceof Component){
+            this.parent.getElement().append(this.#element)
+        }else{
+            document.querySelector(this.parent).append(this.#element)
+        }
+    }
+}
