@@ -33,7 +33,7 @@ module.exports = class Database{
 
    removeBooksFromStock(bookName,quantity){
     const book = this.findBookByName(bookName)
-    book?.removeBooksFromStock(quantity)
+    book?.removeFromStock(quantity)
    }
 
 

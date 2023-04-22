@@ -8,7 +8,7 @@ const Product = require('./entities/Product')
 
  const authors = app.getAuthor()
 
- app.createBook('Ladrão de raios','...','Ação',300,authors[0],'...',19.89,100)
+ app.createBook('Ladrão de raios','...','Ação',300,authors[0],'...',12.89,100)
  app.createBook('O mar de Monstro','...','Ação',400,authors[0],'...',24.89,100)
  app.createBook('O poder do Habito','...','Ação',300,authors[1],'...',24.89,100)
  app.createBook('O segredo','...','Ação',300,authors[1],'...',24.89,100)
