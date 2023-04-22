@@ -7,13 +7,11 @@ class Mage extends Character{
   }
 
   attack(person){
-    person.lifePoints -= (this.atkPoints + this.magic - person.defPoints)
-    return this
+    person.lifePoints -= (this.atkPoints + this.magic) - person.defPoints
   }
 
   heal(person){
     person.lifePoints += this.magic * 2
-    return this
   }
 }
 

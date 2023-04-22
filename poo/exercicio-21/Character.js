@@ -7,8 +7,7 @@ class Character {
  }
 
  attack(person){
-  person.lifePoints =- (this.atkPoints - person.defPoints)
-  return person
+  person.lifePoints -= this.atkPoints - person.defPoints
  }
 }
 

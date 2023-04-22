@@ -9,7 +9,7 @@ class Warrior extends Character{
 
   attack(person){
     if(this.attacking === true){
-    person.lifePoints -= (this.atkPoints - person.defPoints)
+    person.lifePoints -= this.atkPoints - person.defPoints
     return person
    }else{
     return 'está em modo defesa'
