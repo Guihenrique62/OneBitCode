@@ -52,6 +52,7 @@ module.exports = class App {
 
   createOrder(items,user){
     const order = new Order(items,user)
+    order.subBalance(user)
     App.#database.saveOrder(order)
     order.data.items.forEach(({product, quantity}) => {
       if(product instanceof Book){

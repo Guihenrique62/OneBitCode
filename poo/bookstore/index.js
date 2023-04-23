@@ -22,7 +22,8 @@ const Product = require('./entities/Product')
  const items = [
   {
     product: books[0],
-    quantity: 2},
+    quantity: 2
+  },
   {
     product: books[1],
     quantity: 1
@@ -36,3 +37,5 @@ const Product = require('./entities/Product')
  app.createOrder(items, users[0])
 
  app.showDatabase()
+
+ console.log(app.getAuthor())

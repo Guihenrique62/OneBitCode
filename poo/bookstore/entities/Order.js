@@ -14,6 +14,9 @@ module.exports = class Order{
     this.#total = items.reduce((sum, {product,quantity}) => sum +(product.price * quantity),0)
   }
 
+  subBalance(user){
+    user.removeBalanceUser(this.#total)
+  }
   get data(){
     return {
       items: this.#items,
