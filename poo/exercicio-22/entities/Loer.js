@@ -11,14 +11,10 @@ module.exports = class Loer{
     }
     this.createdAt = new Date()
   }
-
   static set fee(newFeePercentege){
     Loer.#fee = 1 + (newFeePercentege / 100)
   }
-
   static get fee(){
     return Loer.#fee
   }
-
-
 }
