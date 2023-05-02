@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "ola mundo",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, omnis animi! Ipsam laborum tenetur consequuntur ab accusamus. Voluptate quisquam illum error pariatur nisi porro, repellendus veniam quasi, obcaecati ad necessitatibus?",
+      "author": "Guilherme"
+    },
+    {
+      "id": 2,
+      "title": "Requisições POST",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, omnis animi! Ipsam laborum tenetur consequuntur ab accusamus. Voluptate quisquam illum error pariatur nisi porro, repellendus veniam quasi, obcaecati ad necessitatibus?",
+      "author": "Guilherme"
+    },
+    {
+      "title": "testando",
+      "author": "testando ",
+      "content": "testando\n\n",
+      "id": 3
+    },
+    {
+      "title": "231",
+      "author": "3333333333333333333333333333333",
+      "content": "4444444444444444444444",
+      "id": 4
+    }
+  ]
+}
