@@ -2,5 +2,8 @@
   "dependencies": {
     "bootstrap": "^5.3.0",
     "sass": "^1.63.4"
+  },
+  "scripts": {
+    "sass": "sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/dist/css"
   }
 }

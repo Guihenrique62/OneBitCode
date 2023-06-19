@@ -3,9 +3,104 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <link rel="shortcut icon" href="media/FAVICON-SPACEX.png" type="image/x-icon">
+
+   <!--Link Bootstrap-->
+   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+   <style>
+      .container-wrapper{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+      }
+   </style>
+   <title>Rumo a Marte</title>
 </head>
-<body>
+<body class="bg-primary container-wrapper">
    
+   <div class="container-sm bg-dark rounded shadow-lg p-3 mb-5">
+      <div class="row text-center py-4">
+         <div class="col">
+            <img src="media/logoOneBitDark.png" alt="logo" style="width: 30%;">
+         </div>
+      </div>
+
+      <form class="form-control-sm">
+            <h2 class="text-light fs-5">1 - Qual o seu nome?</h2>
+            <div class="input-group p-2">
+               <span class="input-group-text">Primeiro Nome:</span>
+               <input type="text" class="form-control" placeholder="Digite..." aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group p-2">
+               <span class="input-group-text">Segundo Nome:</span>
+               <input type="text" class="form-control" placeholder="Digite..." aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <h2 class="text-light fs-5 py-2">2 - Qual o seu gênero?</h2>
+            <div class="form-check">
+               <input type="radio" class="form-check-input" name="gen">
+               <label class="form-check-label text-light"for="gen">Homem</label>
+            </div>
+            <div class="form-check">
+               <input type="radio" class="form-check-input" name="gen">
+               <label class="form-check-label text-light"for="gen">Mulher</label>
+            </div>
+            <div class="form-check">
+               <input type="radio" class="form-check-input" name="gen">
+               <label class="form-check-label text-light"for="gen">Prefiro não dizer</label>
+            </div>
+
+            <h2 class="text-light fs-5 py-2">3 - Marque os treinamentos que você fez:</h2>
+
+            <div class="form-check form-switch">
+               <input class="form-check-input" type="checkbox" role="switch" id="trainament">
+               <label class="form-check-label text-light" for="trainament">Treinamento básico de astronauta</label>
+            </div>
+            <div class="form-check form-switch">
+               <input class="form-check-input" type="checkbox" role="switch" id="trainament">
+               <label class="form-check-label text-light" for="trainament">Treinamento físico básico</label>
+            </div>
+            <div class="form-check form-switch">
+               <input class="form-check-input" type="checkbox" role="switch" id="trainament">
+               <label class="form-check-label text-light" for="trainament">Treinamento avançado de astronauta</label>
+            </div>
+            <div class="form-check form-switch">
+               <input class="form-check-input" type="checkbox" role="switch" id="trainament">
+               <label class="form-check-label text-light" for="trainament">Treinamento físico intenso</label>
+            </div>
+
+            <h2 class="text-light fs-5 py-2">4 - Quais você acha que são suas qualidades?</h2>
+
+            <div class="form-check form-check-inline">
+               <input class="form-check-input" type="checkbox" id="checkbox1" value="option1">
+               <label class="form-check-label text-light" for="checkbox1">Proativo</label>
+             </div>
+             <div class="form-check form-check-inline">
+               <input class="form-check-input" type="checkbox" id="checkbox2" value="option2">
+               <label class="form-check-label text-light" for="checkbox2">Resistente</label>
+             </div>
+             <div class="form-check form-check-inline">
+               <input class="form-check-input" type="checkbox" id="checkbox3" value="option3">
+               <label class="form-check-label text-light" for="checkbox3">Não vomito facil</label>
+             </div>
+             <div class="form-check form-check-inline">
+               <input class="form-check-input" type="checkbox" id="checkbox4" value="option4">
+               <label class="form-check-label text-light" for="checkbox4">Não temo marciano</label>
+             </div>
+             <div class="form-check form-check-inline">
+               <input class="form-check-input" type="checkbox" id="checkbox5" value="option5">
+               <label class="form-check-label text-light" for="checkbox5">ja vi todos os star wars</label>
+             </div>
+
+             <div class="text-center py-3">
+               <button type="button" class="btn btn-outline-danger">Enviar</button>
+             </div>
+      </form>
+      
+   </div>
+
+   <!--Script Bootstrap-->
+   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>
