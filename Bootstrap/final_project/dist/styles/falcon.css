@@ -1,0 +1,38 @@
+.title-padding {
+  padding-top: 200px;
+}
+
+.shortTitle {
+  max-width: 520px;
+  line-height: 1.8;
+}
+
+.section-1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../media/falcon9/01.jpg);
+}
+
+.section-2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../media/falcon9/02.jpg);
+}
+
+.falcontitle {
+  font-size: 6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.section-number {
+  background-color: black;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=falcon.css.map */

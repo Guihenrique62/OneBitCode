@@ -1,0 +1,30 @@
+@import 'commonVariables/titles';
+
+@mixin sections {
+   background-size: cover; 
+   background-repeat: no-repeat; 
+   background-position: center center;
+ }
+
+.section-1{
+   @include sections();
+   background-image: url(../../media/falcon9/01.jpg);
+}
+.section-2{
+   @include sections();
+   background-image: url(../../media/falcon9/02.jpg);
+}
+
+.falcontitle{
+   font-size: 6rem;
+   font-weight: 500;
+   text-align: center;
+}
+
+.section-number{
+   background-color: black;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
