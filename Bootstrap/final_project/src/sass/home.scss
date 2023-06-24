@@ -1,10 +1,37 @@
-body{
-   background-color: aquamarine;
-}
+@import 'commonVariables/titles';
 
-.section-1{
-   background-image: url(../../media/home/01.jpg);
+@mixin sections {
    background-size: cover; 
    background-repeat: no-repeat; 
    background-position: center center;
+ }
+
+.section-1{
+   @include sections();
+   background-image: url(../../media/home/01.jpg);
+}
+
+.section-2{
+   background-image: url(../../media/home/03.jpg);
+   @include sections();
+}
+
+.section-3{
+   background-image: url(../../media/home/02.gif);
+   @include sections();
+}
+
+.section-4{
+   background-image: url(../../media/home/04.jpg);
+   @include sections();
+}
+
+.footer{
+   background-color: rgb(26, 26, 26);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1rem;
+   font-weight: 500;
+   font-size: 1rem;
 }
