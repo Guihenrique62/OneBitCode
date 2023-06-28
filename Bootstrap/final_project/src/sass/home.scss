@@ -25,13 +25,3 @@
    background-image: url(../../media/home/04.jpg);
    @include sections();
 }
-
-.footer{
-   background-color: rgb(26, 26, 26);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 1rem;
-   font-weight: 500;
-   font-size: 1rem;
-}

@@ -7,7 +7,18 @@
   line-height: 1.8;
 }
 
+.footer {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
 .section-1 {
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -15,10 +26,19 @@
 }
 
 .section-2 {
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url(../../media/falcon9/02.jpg);
+}
+
+.section-4 {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../media/falcon9/08.jpg);
 }
 
 .falcontitle {
@@ -31,8 +51,77 @@
   background-color: black;
   height: 30vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+}
+
+.carrousel01 {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../media/falcon9/03.jpg);
+}
+
+.carrousel02 {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../media/falcon9/04.jpg);
+}
+
+.carrousel03 {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../media/falcon9/05.jpg);
+}
+
+.carrousel04 {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../media/falcon9/06.jpg);
+}
+
+.carrousel05 {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../media/falcon9/07.jpg);
+}
+
+.carrouselSlide01 {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../media/falcon9/08.jpg);
+}
+
+.carrouselSlide {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#overViewPosition {
+  width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+
+@media (max-width: 600px) {
+  .falcontitle {
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=falcon.css.map */
