@@ -1,5 +1,70 @@
 @import 'commonVariables/titles';
 
-body{
-    background-color: antiquewhite;
+
+@mixin sections {
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+  }
+
+
+  .humantitle{
+    font-size: 7rem;
+    padding: 2rem
+  }
+
+
+.section-1{
+    @include sections();
+    background-image: url(../../media/humanFlight/01.jpg);
+}
+
+.section-text{
+    background-color: black;
+    color: white;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-2{
+    @include sections();
+    background-image: url(../../media/humanFlight/02.jpg);
+}
+
+.section-3{
+    @include sections();
+    background-image: url(../../media/humanFlight/03.jpg);
+}
+.section-4{
+    @include sections();
+    background-image: url(../../media/humanFlight/04.jpg);
+}
+.section-5{
+    @include sections();
+    background-image: url(../../media/humanFlight/05.jpg);
+}
+
+.containerRight{
+    margin-left: 55%;
+    width: fit-content;
+}
+
+@media (max-width:800px) {
+    .humantitle{
+        font-size: 4rem;
+      }
+}
+
+@media (max-width:450px) {
+    .humantitle{
+        font-size: 3rem;
+      }
+}
+
+@media (max-width:350px) {
+    .humantitle{
+        font-size: 2.3rem;
+      }
 }
