@@ -1,0 +1,24 @@
+.title-padding {
+  padding-top: 200px;
+}
+
+.shortTitle {
+  max-width: 520px;
+  line-height: 1.8;
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+/*# sourceMappingURL=spaceflight.css.map */
