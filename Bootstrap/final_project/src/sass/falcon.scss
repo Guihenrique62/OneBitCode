@@ -1,6 +1,7 @@
 @import 'commonVariables/titles';
 
 @mixin sections {
+   height: 100vh;
    background-size: cover; 
    background-repeat: no-repeat; 
    background-position: center center;
@@ -15,6 +16,13 @@
    background-image: url(../../media/falcon9/02.jpg);
 }
 
+.section-4{
+   @include sections();
+   background-image: url(../../media/falcon9/08.jpg);
+}
+
+
+
 .falcontitle{
    font-size: 6rem;
    font-weight: 500;
@@ -25,6 +33,53 @@
    background-color: black;
    height: 30vh;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    justify-content: center;
+}
+
+.carrousel01{
+   @include sections();
+   background-image: url(../../media/falcon9/03.jpg);
+}
+.carrousel02{
+   @include sections();
+   background-image: url(../../media/falcon9/04.jpg);
+}
+.carrousel03{
+   @include sections();
+   background-image: url(../../media/falcon9/05.jpg);
+}
+.carrousel04{
+   @include sections();
+   background-image: url(../../media/falcon9/06.jpg);
+}
+.carrousel05{
+   @include sections();
+   background-image: url(../../media/falcon9/07.jpg);
+}
+
+.carrouselSlide01{
+   @include sections();
+   background-image: url(../../media/falcon9/08.jpg);
+}
+
+.carrouselSlide{
+   @include sections();
+}
+
+#overViewPosition{
+   width: 500px;
+   margin-left: 13%;
+   padding-top: 15%;
+
+}
+
+
+@media (max-width:600px){
+
+   .falcontitle{
+      font-size: 3.5rem;
+      font-weight: 500;
+      text-align: center;
+   }
 }
