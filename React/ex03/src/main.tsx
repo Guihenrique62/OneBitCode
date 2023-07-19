@@ -8,8 +8,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Profile avatar={avatarUrl} name='John Doe' number='5562991556834' email='guibonito@123'/>
     <Profile avatar={avatarUrl} name='Guilherme' number='5562991556834' email='guibonito@123'/>
-    <Profile avatar={avatarUrl} name='John Doe' number='5562991556834' email='guibonito@123'/>
-    
 
   </React.StrictMode>,
 )
