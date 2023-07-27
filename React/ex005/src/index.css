@@ -1,0 +1,117 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
+
+}
+
+.app{
+  width: 60vw;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.252);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.app > h1{
+  padding-left: 3.5rem;
+}
+
+.app > form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.app > form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app > form > div > label{
+  width: 85%;
+  text-align: start;
+
+}
+
+#coment{
+  height: 6rem;
+}
+
+.comentContainer{
+  padding-left: 3rem;
+}
+
+h4{
+  margin: auto;
+  text-align: center;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(113, 205, 254) 65%,rgb(139, 246, 230));
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid #4d4d4d;
+  padding: 1em 1.2em;
+  font-size: 1em;
+  background-color: #fff;
+  color: #1a1a1a;
+  width: 80%;
+}
+
+hr{
+  border: 1px 1px solid;
+  width: 80%;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  margin:auto;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 60%;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
