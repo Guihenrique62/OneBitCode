@@ -25,6 +25,8 @@ export default function App() {
     const newComent = {email,coment,date}
 
     addComent(newComent)
+    setEmail('')
+    setcoment('')
   }
 
   const addComent = (newComent) => {
