@@ -1,3 +1,4 @@
+
 import {useEffect, useState } from "react"
 
 async function fetchPokemon(){
@@ -9,7 +10,7 @@ async function fetchPokemon(){
 
 export default function App(){
   const [pokemon,setPokemon] = useState([])
-  const [pokemonShown,setPokemonShown] = useState(null)
+  const [pokemonShown,setPokemonShown] = useState<ResponsePokemon | null>(null)
 
   useEffect(()=>{
     fetchPokemon().then(result => {
@@ -24,6 +25,7 @@ export default function App(){
       const data = await fetch(url).then(res => res.json())
       if(data){
         console.log("Pokemon encontrado")
+        console.log(data)
         setPokemonShown(data)
       }
     }
@@ -33,7 +35,7 @@ export default function App(){
       <div>
         <h2>Pokémon</h2>
         <ul className="pokemon">
-          {pokemon.map(mon => (
+          {pokemon.map((mon:Pokemon) => (
             <li key={mon.name}>
               <span>{mon.name}</span>
               <button onClick={()=> showDetails(mon.url)}>
