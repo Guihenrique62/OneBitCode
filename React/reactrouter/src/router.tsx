@@ -1,21 +1,38 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "./components/home";
-import Products from "./components/Products";
-import Cart from "./components/Cart";
-import AdminHome from "./components/Admin";
+import Products from "./views/Products";
+import Cart from "./views/Cart";
+import AdminHome from "./views/admin/Admin";
+import RootLayout from "./views/RootLayout";
+import Home from "./views/Home";
+import Product from "./views/Product";
+import loadProduct from "./loaders/products";
+import ProductBoundarie from "./error-boundaries/productBoudarie";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Home/>
-    },
-    {
-        path: "/products",
-        element: <Products/>
-    },
-    {
-        path: "/cart",
-        element: <Cart/>
+        element: <RootLayout/>,
+        children:[{
+            index: true,
+            element: <Home/>
+        },{
+            path: 'products',
+            element: <Products></Products>
+        },{
+            path: 'products/:productId',
+            element: <Product/>,
+            loader: loadProduct,
+            errorElement: <ProductBoundarie></ProductBoundarie>
+        },
+        {
+            path: "products",
+            element: <Products/>
+        },
+        {
+            path: "cart",
+            element: <Cart/>
+        },
+    ]
     },
     {
         path: "/admin",
