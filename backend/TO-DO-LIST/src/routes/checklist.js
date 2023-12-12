@@ -12,4 +12,20 @@ router.post('/', (req,res)=>{
     res.status(200).send(req.body)
 })
 
+router.get('/:id',(req,res)=>{
+    console.log(req.params.id);
+    res.send('Id: ' + req.params.id)
+})
+
+router.put('/:id',(req,res)=>{
+    console.log(req.params.id);
+    res.send('put Id: ' + req.params.id)
+})
+
+router.delete('/:id',(req,res)=>{
+    console.log(req.params.id);
+    res.send('delete Id: ' + req.params.id)
+})
+
+
 module.exports = router
